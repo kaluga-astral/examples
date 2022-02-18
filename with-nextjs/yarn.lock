@@ -5,13 +5,13 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@astral/icons@npm:^0.2.2":
-  version: 0.2.5
-  resolution: "@astral/icons@npm:0.2.5"
+"@astral/icons@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@astral/icons@npm:0.3.0"
   peerDependencies:
     "@mui/material": ^5.3.1
     react: ^17.0.0
-  checksum: f8f427ab4259b6ab21792242d79e4d1f4cdca42fece067e2790d93e8c3cb6ad26459ee2a994feb77b389ffbdf001066309c498539a0a93d81b18e3baa8df915d
+  checksum: 8175b3b429a180cca79e7efcb1f1bffcb16754f111fb8f3fd9ab6c4fa3050d823197ee37a1ca61ad15791748cb736605acb2ac58bee39387e56d4ba23711df50
   languageName: node
   linkType: hard
 
@@ -19,7 +19,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@astral/nextjs-example@workspace:."
   dependencies:
-    "@astral/ui": 0.2.6-beta.6
+    "@astral/ui": 0.3.1-beta.10
+    "@tsconfig/next": ^1.0.2
     "@types/node": ^17.0.16
     "@types/react": ^17.0.39
     clsx: ^1.1.1
@@ -31,14 +32,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@astral/ui@npm:0.2.6-beta.6":
-  version: 0.2.6-beta.6
-  resolution: "@astral/ui@npm:0.2.6-beta.6"
+"@astral/ui@npm:0.3.1-beta.10":
+  version: 0.3.1-beta.10
+  resolution: "@astral/ui@npm:0.3.1-beta.10"
   dependencies:
-    "@astral/icons": ^0.2.2
-    "@emotion/cache": ^11.7.1
+    "@astral/icons": ^0.3.0
+    "@emotion/cache": 11.7.1
     "@emotion/react": 11.5.0
-    "@emotion/server": ^11.4.0
+    "@emotion/server": 11.4.0
     "@emotion/styled": 11.3.0
     "@mui/base": 5.0.0-alpha.66
     "@mui/lab": 5.0.0-alpha.65
@@ -46,7 +47,7 @@ __metadata:
     lodash-es: 4.17.21
   peerDependencies:
     react: ^17.0.0
-  checksum: a4b4d3c7f2acee07d20b6797a1d04e220a047d194718a448b06d9e1db9700bf58548698da75a5cadd5ce512c90cab605f18fb310c0265ca741ef6761bab63d77
+  checksum: 7b281d2f48a8decec9686ed7dd0b21c7a7b120ef2241cb374fc88c9e4f5e0cd20368b8a35c74af586305c192779da507104c07874a608adefa80b53c5963fc13
   languageName: node
   linkType: hard
 
@@ -208,7 +209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:^11.5.0, @emotion/cache@npm:^11.7.1":
+"@emotion/cache@npm:11.7.1, @emotion/cache@npm:^11.5.0, @emotion/cache@npm:^11.7.1":
   version: 11.7.1
   resolution: "@emotion/cache@npm:11.7.1"
   dependencies:
@@ -280,7 +281,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/server@npm:^11.4.0":
+"@emotion/server@npm:11.4.0":
   version: 11.4.0
   resolution: "@emotion/server@npm:11.4.0"
   dependencies:
@@ -645,6 +646,13 @@ __metadata:
   version: 2.11.2
   resolution: "@popperjs/core@npm:2.11.2"
   checksum: 5695bf020eda54636e16a62dc9b5fdd92beaf7b2d19f62fcef049d57c5cff92773562d80cbf760b217c3ec928da310eb24994ab6a00fd39dffa0af9b5dfc01a6
+  languageName: node
+  linkType: hard
+
+"@tsconfig/next@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@tsconfig/next@npm:1.0.2"
+  checksum: 56b772dccf0da2ceb9aade3c59e9c739703de43465a399febd77e6898c3f92346379b22622158be76c9c5c7a47e5c133aa068661180737f3058d944cb080a10a
   languageName: node
   linkType: hard
 

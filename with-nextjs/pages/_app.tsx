@@ -1,24 +1,33 @@
-import * as React from 'react';
-import Head from 'next/head';
-import { ThemeProvider, CacheProvider } from '@astral/ui'
-import theme from '../src/theme';
-import createEmotionCache from '../src/createEmotionCache';
+import * as React from 'react'
+import Head from 'next/head'
+import { AppProps as NextAppProps } from 'next/app'
+import {
+  ThemeProvider,
+  StylesCacheProvider,
+  StylesCache,
+} from '@astral/ui'
+import { theme } from '../src/theme'
+import { createStylesCache } from '../src/createStylesCache'
 
-const clientSideEmotionCache = createEmotionCache();
+const clientSideEmotionCache = createStylesCache();
 
-export function App(props) {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+export type AppProps = NextAppProps & {
+  stylesCache: StylesCache,
+}
+
+export const App: React.FC<AppProps> = (props) => {
+  const { Component, stylesCache = clientSideEmotionCache, pageProps } = props;
 
   return (
-    <CacheProvider value={emotionCache}>
+    <StylesCacheProvider value={stylesCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
-    </CacheProvider>
-  );
+    </StylesCacheProvider>
+  )
 }
 
 export default App

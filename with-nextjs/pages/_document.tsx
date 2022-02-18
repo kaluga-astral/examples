@@ -1,26 +1,25 @@
 import * as React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import { createEmotionServer } from '@astral/ui';
-import theme from '../src/theme';
-import createEmotionCache from '../src/createEmotionCache';
+import { createStylesServer } from '@astral/ui';
+import { theme } from '../src/theme';
+import { createStylesCache } from '../src/createStylesCache';
 
-export class Document extends NextDocument {
-  static getInitialProps = async (ctx) => {
+export class Document extends NextDocument<{ emotionStyleTags: JSX.Element[] }> {
+  static async getInitialProps(ctx) {
     const originalRenderPage = ctx.renderPage;
-    const cache = createEmotionCache();
-    const { extractCriticalToChunks } = createEmotionServer(cache);
+    const cache = createStylesCache();
+    const { extractCriticalToChunks } = createStylesServer(cache);
 
     ctx.renderPage = () =>
       originalRenderPage({
         enhanceApp: (App) =>
           function EnhanceApp(props) {
-            return <App emotionCache={cache} {...props} />;
+            return <App stylesCache={cache} {...props} />;
           },
       });
 
     const initialProps = await NextDocument.getInitialProps(ctx);
-    const emotionStyles = extractCriticalToChunks(initialProps.html);
-    const emotionStyleTags = emotionStyles.styles.map((style) => (
+    const emotionStyleTags = extractCriticalToChunks(initialProps.html).styles.map((style) => (
       <style
         data-emotion={`${style.key} ${style.ids.join(' ')}`}
         key={style.key}
