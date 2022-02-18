@@ -19,7 +19,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@astral/nextjs-example@workspace:."
   dependencies:
-    "@astral/ui": 0.2.6-beta.5
+    "@astral/ui": 0.2.6-beta.6
     "@types/node": ^17.0.16
     "@types/react": ^17.0.39
     clsx: ^1.1.1
@@ -31,9 +31,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@astral/ui@npm:0.2.6-beta.5":
-  version: 0.2.6-beta.5
-  resolution: "@astral/ui@npm:0.2.6-beta.5"
+"@astral/ui@npm:0.2.6-beta.6":
+  version: 0.2.6-beta.6
+  resolution: "@astral/ui@npm:0.2.6-beta.6"
   dependencies:
     "@astral/icons": ^0.2.2
     "@emotion/cache": ^11.7.1
@@ -46,7 +46,7 @@ __metadata:
     lodash-es: 4.17.21
   peerDependencies:
     react: ^17.0.0
-  checksum: bff3e842d70abdb95a7cacfb872062dd06c8d3827b6f4a09d833aa4e2103b1574196f1adff6822b5d6387af076a4e403b96cd60c47aa1cd3a27a5b5f45deba4d
+  checksum: a4b4d3c7f2acee07d20b6797a1d04e220a047d194718a448b06d9e1db9700bf58548698da75a5cadd5ce512c90cab605f18fb310c0265ca741ef6761bab63d77
   languageName: node
   linkType: hard
 
