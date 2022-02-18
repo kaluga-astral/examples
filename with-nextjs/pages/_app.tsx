@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
-import { ThemeProvider } from '@astral/ui'
-import { CacheProvider } from '@emotion/react';
+import { ThemeProvider, CacheProvider } from '@astral/ui'
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 

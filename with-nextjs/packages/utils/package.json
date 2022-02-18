@@ -1,0 +1,28 @@
+{
+  "name": "utils",
+  "sideEffects": false,
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/lodash-es": "^4.17.6",
+    "typescript": "^4.5.5"
+  },
+  "type": "module",
+  "types": "./types/foo.d.ts",
+  "source": "./src/foo.ts",
+  "main": "./dist/cjs/foo.js",
+  "module": "./dist/esm/foo.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/foo.js",
+      "require": "./dist/cjs/foo.js",
+      "types": "./types/foo.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --module esnext --outDir ${DIST_DIR_NAME}/esm && tsc --module commonjs --outDir ${DIST_DIR_NAME}/cjs && tsc --declaration --emitDeclarationOnly --outDir ./types"
+  }
+}

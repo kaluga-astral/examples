@@ -1,7 +1,10 @@
 {
-  "name": "with-nextjs",
-  "version": "5.0.0",
+  "name": "@astral/nextjs-example",
+  "packageManager": "yarn@3.1.1",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +13,7 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
-    "@astral/ui": "^0.2.5",
-    "@emotion/react": "^11.7.1",
+    "@astral/ui": "0.2.6-beta.5",
     "clsx": "^1.1.1",
     "next": "^12.0.10",
     "react": "^17.0.2",
@@ -20,7 +22,7 @@
   "devDependencies": {
     "@types/node": "^17.0.16",
     "@types/react": "^17.0.39",
+    "next-transpile-modules": "^9.0.0",
     "typescript": "^4.5.5"
-  },
-  "packageManager": "yarn@3.1.1"
+  }
 }
