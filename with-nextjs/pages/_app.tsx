@@ -9,6 +9,8 @@ import {
 import { theme } from '../src/theme'
 import { createStylesCache } from '../src/createStylesCache'
 
+import { Layout } from '../src/Layout'
+
 const clientSideEmotionCache = createStylesCache();
 
 export type AppProps = NextAppProps & {
@@ -24,7 +26,9 @@ export const App: React.FC<AppProps> = (props) => {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </StylesCacheProvider>
   )
