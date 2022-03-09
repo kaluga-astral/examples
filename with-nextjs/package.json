@@ -1,6 +1,6 @@
 {
   "name": "@astral/nextjs-example",
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@3.2.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -13,7 +13,7 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
-    "@astral/ui": "^0.8.1",
+    "@astral/ui": "^0.9.0-preview",
     "clsx": "^1.1.1",
     "next": "^12.1.0",
     "react": "^17.0.2",
