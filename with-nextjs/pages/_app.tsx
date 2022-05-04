@@ -4,8 +4,10 @@ import { AppProps as NextAppProps } from 'next/app'
 import {
   ThemeProvider,
   StylesCacheProvider,
-  StylesCache,
 } from '@astral/ui'
+import {
+  StylesCache,
+} from '@astral/ui/server'
 import { theme } from '../src/theme'
 import { createStylesCache } from '../src/createStylesCache'
 
