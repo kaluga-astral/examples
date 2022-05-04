@@ -9,9 +9,10 @@
     "dev": "webpack serve --mode=development"
   },
   "dependencies": {
-    "@astral/ui": "0.4.1-alpha.11",
-    "@astral/icons": "0.4.0",
-    "@astral/fonts": "0.4.0",
+    "@astral/ui": "*",
+    "@astral/icons": "*",
+    "@astral/fonts": "*",
+    "@astral/illustrations": "*",
     "@babel/preset-typescript": "^7.16.0",
     "@babel/core": "^7.15.8",
     "@babel/plugin-transform-async-to-generator": "7.12.1",

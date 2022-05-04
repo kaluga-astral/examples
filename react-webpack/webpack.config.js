@@ -8,10 +8,14 @@ const { useBabel } = require('@webpackon/use-babel');
 const { useFonts } = require('@webpackon/use-fonts');
 const { useUrlImages } = require('@webpackon/use-url-images');
 const { useDevServer } = require('@webpackon/use-dev-server');
+const { useTranspileModules } = require('@webpackon/use-transpile-modules');
 const { useOptimization } = require('@webpackon/use-optimization');
 
 module.exports = (_, { mode }) =>
   compose(
+    useTranspileModules({
+      transpileModules: ['@astral/illustrations', '@astral/fonts']
+    }),
     useReactRefresh({ mode }),
     useHtml({
       mode,
