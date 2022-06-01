@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Typography } from '@astral/ui'
 
 import { Container } from './Container'
 
@@ -8,11 +9,13 @@ export const Layout: React.FC<LayoutProps> = (props) => {
   const { children } = props;
 
   return (
-    <React.Fragment>
-      <header>header</header>
-      <header>aside</header>
+    <Container>
+      <header>
+        <Typography>header</Typography>
+      </header>
+      <aside>sidebar</aside>
       <main>{children}</main>
-    </React.Fragment>
+    </Container>
   )
 }
 
