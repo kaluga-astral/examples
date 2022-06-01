@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/next/tsconfig.json",
   "include": [
+    "emotion.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
