@@ -5,13 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@astral/icons@npm:^0.34.0":
-  version: 0.34.0
-  resolution: "@astral/icons@npm:0.34.0"
+"@astral/icons@npm:^0.36.0":
+  version: 0.36.0
+  resolution: "@astral/icons@npm:0.36.0"
   peerDependencies:
     "@mui/material": ^5.3.1
     react: ^17.0.0
-  checksum: 61aaf5f149ba30f638c0fe33f30f004f37f43ccbe1d6f584b8b698cc8fa9d3436ee21c5756d816abd50a71b98a52f7af7b069da7e423b8d42fb883a8b70c17d5
+  checksum: d5315a12e930121031d9e83c32875474d38a95528e300db4cd515d177bc0822eb188d75ee4a44354ec4f39ffdf21ec0743198f39cbdd03bcd1a2d7fbf2143b81
   languageName: node
   linkType: hard
 
@@ -19,10 +19,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@astral/nextjs-example@workspace:."
   dependencies:
-    "@astral/ui": 0.34.0
+    "@astral/ui": 0.36.0
     "@tsconfig/next": ^1.0.2
-    "@types/node": ^17.0.16
-    "@types/react": ^17.0.39
+    "@types/node": ^17.0.38
     clsx: ^1.1.1
     next: ^12.1.0
     next-transpile-modules: ^9.0.0
@@ -32,11 +31,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@astral/ui@npm:0.34.0":
-  version: 0.34.0
-  resolution: "@astral/ui@npm:0.34.0"
+"@astral/ui@npm:0.36.0":
+  version: 0.36.0
+  resolution: "@astral/ui@npm:0.36.0"
   dependencies:
-    "@astral/icons": ^0.34.0
+    "@astral/icons": ^0.36.0
     "@emotion/cache": 11.7.1
     "@emotion/react": 11.9.0
     "@emotion/server": 11.4.0
@@ -51,7 +50,7 @@ __metadata:
     react-toastify: ^9.0.0-rc-2
   peerDependencies:
     react: ^17.0.0
-  checksum: 75d566a6e4d92c49f13800eeb796ad3ef3f0c84689bd6fca202e9043fbd1aa66c167eb00208bf727a65e9b6a4b68a14a1a876abda17d6486a42f874ea0860c7a
+  checksum: cd645ee7fdc50656071851817865af4b04cc0dca4c6e399db4a0e006c2bb42aae45c9830c15272cf0e4943a2e345dc21105cd94c96da9616fb33b232b54de4ca
   languageName: node
   linkType: hard
 
@@ -691,7 +690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.16":
+"@types/node@npm:^17.0.38":
   version: 17.0.38
   resolution: "@types/node@npm:17.0.38"
   checksum: 9db1c39d603850ced665ab60b8f8ebce674ff9d762dfff0f776d520e71e4d73fdcd4c7f69213b804d878cf3e726911b09cae4ee66e35ae2724538de9f4838681
@@ -738,17 +737,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 333c99bd46cc2190ec6f6e4f3fa6cdee07e1d4d028fb2bd895d3927d9de6e86ede57befdc79d9acbfb7b1c058091bf3b38b8de3703f83e0f8cd8d15d7457b3d8
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17.0.39":
-  version: 17.0.45
-  resolution: "@types/react@npm:17.0.45"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 3cc13a02824c13f6fa4807a83abd065ac1d9943359e76bd995cc7cd2b4148c1176ebd54a30a9f4eb8a0f141ff359d712876f256c4fee707e4290607ef8410b3e
   languageName: node
   linkType: hard
 

@@ -1,9 +1,11 @@
-import * as React from 'react'
+import React from 'react'
 import { Button, Typography } from '@astral/ui'
 
 import { Container } from './Container'
 
-export type LayoutProps = {}
+export type LayoutProps = {
+  children: React.ReactNode
+}
 
 export const Layout: React.FC<LayoutProps> = (props) => {
   const { children } = props;
