@@ -1,4 +1,3 @@
-import * as React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import { createStylesServer } from '@astral/ui/server';
 import { theme } from '../src/theme';

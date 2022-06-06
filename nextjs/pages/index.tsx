@@ -1,9 +1,11 @@
-import * as React from 'react';
-import { TextField } from '@astral/ui';
+import { NextPage } from 'next';
+import { TextField, Typography, Button } from '@astral/ui';
 
-export function Index() {
+export const IndexPage: NextPage = () => {
   return (
     <div>
+      <Typography>IndePage</Typography>
+      <Button>click me</Button>
       {new Array(500).fill('').map((_value, i) => {
         return (
           <div key={i}>
@@ -15,4 +17,4 @@ export function Index() {
   );
 }
 
-export default Index
+export default IndexPage

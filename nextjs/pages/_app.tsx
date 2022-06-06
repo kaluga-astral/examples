@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { FC } from 'react'
 import Head from 'next/head'
 import { AppProps as NextAppProps } from 'next/app'
 import {
@@ -19,7 +19,7 @@ export type AppProps = NextAppProps & {
   stylesCache: StylesCache,
 }
 
-export const App: React.FC<AppProps> = (props) => {
+export const App: FC<AppProps> = (props) => {
   const { Component, stylesCache = clientSideEmotionCache, pageProps } = props;
 
   return (
