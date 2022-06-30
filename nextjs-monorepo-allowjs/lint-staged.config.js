@@ -9,4 +9,5 @@ module.exports = {
     'npm run lint:styles --workspace=@example/app',
     () => 'npm run lint:types --workspace=@example/app',
   ],
+  '**/*.{js,jsx,ts,tsx}': ['yaspeller --only-errors'],
 };
