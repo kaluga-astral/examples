@@ -1,0 +1,16 @@
+{
+  "name": "@example/ui",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "lint:types": "tsc --noEmit",
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix --quiet",
+    "lint:styles": "stylelint '**/*{.ts,.tsx,.js,.jsx}' --fix",
+    "tests": "jest"
+  },
+  "dependencies": {
+    "@astral/ui": "^0.41.3",
+    "@astral/icons": "^0.41.3",
+    "@example/static": "*"
+  }
+}

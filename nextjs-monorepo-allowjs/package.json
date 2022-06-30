@@ -1,0 +1,40 @@
+{
+  "name": "@example/nextjs-monorepo-allowjs-example",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "app",
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:types": "npm run lint:types --workspaces --if-present",
+    "lint:styles": "npm run lint:styles --workspaces --if-present",
+    "tests": "npm run tests --workspaces --if-present",
+    "install-deps:prod": "npm i --production"
+  },
+  "dependencies": {
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.7.3",
+    "@types/node": "^17.0.38",
+    "@types/jest": "^28.1.3"
+  },
+  "devDependencies": {
+    "commitlint": "16.2.1",
+    "eslint": "^8.17.0",
+    "prettier": "^2.6.2",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.1.2",
+    "stylelint": "^14.5.3",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "@astral/stylelint-config-styled": "^1.3.2",
+    "@astral/eslint-config-react-ts": "^1.3.2",
+    "@astral/commitlint-config": "^1.3.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@example/app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint:types": "tsc --noEmit",
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix --quiet",
+    "lint:styles": "stylelint '**/*{.ts,.tsx,.js,.jsx}' --fix",
+    "tests": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "next": "^12.1.0",
+    "@svgr/webpack": "^6.2.1",
+    "@example/ui": "*",
+    "@example/static": "*",
+    "next-transpile-modules": "^9.0.0",
+    "webpack-merge": "^5.8.0"
+  }
+}

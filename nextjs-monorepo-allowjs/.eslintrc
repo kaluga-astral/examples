@@ -1,0 +1,4 @@
+{
+  "extends": ["@astral/eslint-config-react-ts"],
+  "ignorePatterns": ["lib", "build", "node_modules", ".swc", ".next", "out"]
+}
