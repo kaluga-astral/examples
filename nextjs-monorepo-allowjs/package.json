@@ -12,7 +12,8 @@
     "lint": "npm run lint --workspaces --if-present",
     "lint:types": "npm run lint:types --workspaces --if-present",
     "lint:styles": "npm run lint:styles --workspaces --if-present",
-    "tests": "npm run tests --workspaces --if-present"
+    "tests": "npm run tests --workspaces --if-present",
+    "install-deps:prod": "npm i --production"
   },
   "dependencies": {
     "react": "^18.0.2",

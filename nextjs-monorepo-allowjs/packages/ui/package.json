@@ -12,7 +12,5 @@
     "@astral/ui": "^0.41.3",
     "@astral/icons": "^0.41.3",
     "@example/static": "*"
-  },
-  "devDependencies": {
   }
 }
